@@ -1,0 +1,53 @@
+{
+   "abstract" : "blah blah blah",
+   "author" : [
+      "Shoichi Kaji <skaji@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 6.024, CPAN::Meta::Converter version 2.150010",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "Devel-PatchPerl-Plugin-getcwd",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : "0.034"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "perl" : "5.008001",
+            "version" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "Devel::PatchPerl::Plugin::getcwd" : {
+         "file" : "lib/Devel/PatchPerl/Plugin/getcwd.pm",
+         "version" : "0.001"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/skaji/Devel-PatchPerl-Plugin-getcwd/issues"
+      },
+      "homepage" : "https://github.com/skaji/Devel-PatchPerl-Plugin-getcwd",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/skaji/Devel-PatchPerl-Plugin-getcwd.git",
+         "web" : "https://github.com/skaji/Devel-PatchPerl-Plugin-getcwd"
+      }
+   },
+   "version" : "0.001",
+   "x_generated_by_perl" : "v5.34.0",
+   "x_serialization_backend" : "Cpanel::JSON::XS version 4.27",
+   "x_spdx_expression" : "Artistic-1.0-Perl OR GPL-1.0-or-later",
+   "x_static_install" : 1
+}
+
