@@ -50,15 +50,18 @@ __END__
 
 =head1 NAME
 
-Devel::PatchPerl::Plugin::getcwd - blah blah blah
+Devel::PatchPerl::Plugin::getcwd - use pwd command in macOS
 
 =head1 SYNOPSIS
 
-  use Devel::PatchPerl::Plugin::getcwd;
+  env PERL5_PATCHPERL_PLUGIN=getcwd patchperl
 
 =head1 DESCRIPTION
 
-Devel::PatchPerl::Plugin::getcwd is
+macOS has a bug described in https://gist.github.com/skaji/84a4ea75480298f839f7cf4adcc109c9
+As a result, building perl 5.28.0 or below constantly fails.
+
+This plugin adds a workaround so that we use C<pwd> to get the current directory.
 
 =head1 COPYRIGHT AND LICENSE
 
