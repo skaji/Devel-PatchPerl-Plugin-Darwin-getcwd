@@ -1,4 +1,4 @@
-package Devel::PatchPerl::Plugin::getcwd;
+package Devel::PatchPerl::Plugin::Darwin::getcwd;
 use strict;
 use warnings;
 
@@ -33,7 +33,7 @@ sub patchperl {
     while (my $l = <$in>) {
         print {$out} $l;
         if ($l =~ /\Q$find\E/) {
-            print {$out} q[    if ($start eq ".") { return _backtick_pwd() } # XXX patched by Devel-PatchPerl-Plugin-getcwd], "\n";
+            print {$out} q[    if ($start eq ".") { return _backtick_pwd() } # XXX patched by Devel-PatchPerl-Plugin-Darwin-getcwd], "\n";
         }
     }
     close $in;
@@ -50,15 +50,16 @@ __END__
 
 =head1 NAME
 
-Devel::PatchPerl::Plugin::getcwd - use pwd command in macOS
+Devel::PatchPerl::Plugin::Darwin::getcwd - use pwd command in macOS
 
 =head1 SYNOPSIS
 
-  env PERL5_PATCHPERL_PLUGIN=getcwd patchperl
+  env PERL5_PATCHPERL_PLUGIN=Darwin::getcwd patchperl
 
 =head1 DESCRIPTION
 
 macOS has a bug described in https://gist.github.com/skaji/84a4ea75480298f839f7cf4adcc109c9
+
 As a result, building perl 5.28.0 or below constantly fails.
 
 This plugin adds a workaround so that we use C<pwd> to get the current directory.
