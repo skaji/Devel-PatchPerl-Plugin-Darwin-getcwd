@@ -1,5 +1,6 @@
 prereqs:
   runtime:
     requires:
+      Devel::PatchPerl:
       perl: { version: '5.008001' }
       version:
