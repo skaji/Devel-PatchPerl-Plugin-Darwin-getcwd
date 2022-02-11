@@ -15,7 +15,7 @@ with [Perl-Build](https://github.com/tokuhirom/Perl-Build) then,
 
 # DESCRIPTION
 
-macOS has a bug described in https://gist.github.com/skaji/84a4ea75480298f839f7cf4adcc109c9
+macOS has a bug described in [https://gist.github.com/skaji/84a4ea75480298f839f7cf4adcc109c9](https://gist.github.com/skaji/84a4ea75480298f839f7cf4adcc109c9)
 
 As a result, building perl 5.28 or below often fails:
 
