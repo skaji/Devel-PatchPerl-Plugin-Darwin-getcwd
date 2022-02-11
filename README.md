@@ -2,17 +2,22 @@
 
 # NAME
 
-Devel::PatchPerl::Plugin::Darwin::getcwd - use pwd command in macOS
+Devel::PatchPerl::Plugin::Darwin::getcwd - a workaround for getcwd in macOS
 
 # SYNOPSIS
 
     env PERL5_PATCHPERL_PLUGIN=Darwin::getcwd patchperl
 
+If you use [plenv](https://github.com/tokuhirom/plenv)
+with [Perl-Build](https://github.com/tokuhirom/Perl-Build) then,
+
+    env PERL5_PATCHPERL_PLUGIN=Darwin::getcwd plenv install 5.28.3
+
 # DESCRIPTION
 
 macOS has a bug described in https://gist.github.com/skaji/84a4ea75480298f839f7cf4adcc109c9
 
-As a result, building perl 5.28 or below constantly fails:
+As a result, building perl 5.28 or below often fails:
 
     Running Makefile.PL in cpan/libnet
     ../../miniperl -I../../lib Makefile.PL INSTALLDIRS=perl INSTALLMAN1DIR=none INSTALLMAN3DIR=none PERL_CORE=1 LIBPERL_A=libperl.a

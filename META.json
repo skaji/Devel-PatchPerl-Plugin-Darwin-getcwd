@@ -1,5 +1,5 @@
 {
-   "abstract" : "use pwd command in macOS",
+   "abstract" : "a workaround for getcwd in macOS",
    "author" : [
       "Shoichi Kaji <skaji@cpan.org>"
    ],
