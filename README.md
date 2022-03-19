@@ -1,8 +1,8 @@
-[![Actions Status](https://github.com/skaji/Devel-PatchPerl-Plugin-Darwin-getcwd/workflows/test/badge.svg)](https://github.com/skaji/Devel-PatchPerl-Plugin-Darwin-getcwd/actions)
+[![Actions Status](https://github.com/skaji/Devel-PatchPerl-Plugin-Darwin-getcwd/actions/workflows/test.yml/badge.svg)](https://github.com/skaji/Devel-PatchPerl-Plugin-Darwin-getcwd/actions)
 
 # NAME
 
-Devel::PatchPerl::Plugin::Darwin::getcwd - a workaround for getcwd in macOS
+Devel::PatchPerl::Plugin::Darwin::getcwd - (DEPRECATED) a workaround for getcwd in macOS
 
 # SYNOPSIS
 
@@ -14,6 +14,8 @@ with [Perl-Build](https://github.com/tokuhirom/Perl-Build) then,
     env PERL5_PATCHPERL_PLUGIN=Darwin::getcwd plenv install 5.28.3
 
 # DESCRIPTION
+
+**UPDATE**: It seems that the bug has been fixed in macOS 12.3, so we don't need this module anymore.
 
 macOS has a bug described in [https://gist.github.com/skaji/84a4ea75480298f839f7cf4adcc109c9](https://gist.github.com/skaji/84a4ea75480298f839f7cf4adcc109c9)
 
